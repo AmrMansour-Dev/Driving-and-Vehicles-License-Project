@@ -192,7 +192,6 @@ namespace DVLD_Project
             deleteApplicationToolStripMenuItem.Enabled = LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New;
 
 
-
             issueDrivingLicenseToolStripMenuItem.Enabled = !IssuedLicense && (TotalPassedTestsCount == 3);
 
 
@@ -201,7 +200,7 @@ namespace DVLD_Project
             bool HasPassedWrittenTest = LocalDrivingLicenseApplication.HasPassedTestType(clsTestType.enTestType.WrittenTest);
             bool HasPassedStreetTest = LocalDrivingLicenseApplication.HasPassedTestType(clsTestType.enTestType.StreetTest);
 
-            scheduleTestsMenu.Enabled = (!HasPassedVisionTest || !HasPassedWrittenTest || !HasPassedStreetTest && LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
+            scheduleTestsMenu.Enabled = ((!HasPassedVisionTest || !HasPassedWrittenTest || !HasPassedStreetTest) && LocalDrivingLicenseApplication.ApplicationStatus == clsApplication.enApplicationStatus.New);
 
             if (scheduleTestsMenu.Enabled )
             {
