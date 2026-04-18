@@ -33,5 +33,10 @@ namespace DVLD_Project
 
             ctrlDrivingLicenseApplicationInfo1.LoadApplicationInfo(_LDLAppID);
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
