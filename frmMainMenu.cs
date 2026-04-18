@@ -88,5 +88,11 @@ namespace DVLD_Project
             frmAddUpdateLocalDrivingLicenseApplication frm = new frmAddUpdateLocalDrivingLicenseApplication(-1);
             frm.ShowDialog();
         }
+
+        private void interNationalDrivingLicenseApplicationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListInternationalLicenseApplications frm = new frmListInternationalLicenseApplications();
+            frm.ShowDialog();
+        }
     }
 }
