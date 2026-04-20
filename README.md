@@ -65,7 +65,7 @@ To run the project on your local machine, please follow these steps:
 
 1- Clone the Repository
 
-2-Download Database File and Restore it in your SSMS 
+2-Restore Database File "DVLD_Database.BAK" in your SSMS 
 
 3-Navigate to the Data Access Layer in project and find "clsDataAccessSettings" and Modify connection string to match your local server instance
 
