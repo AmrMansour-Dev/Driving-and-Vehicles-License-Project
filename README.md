@@ -69,4 +69,4 @@ To run the project on your local machine, please follow these steps:
 
 3-Navigate to the Data Access Layer in project and find "clsDataAccessSettings" and Modify connection string to match your local server instance
 
-
+4-For Login Form, Username is : "xxx" and Password : "1234"
